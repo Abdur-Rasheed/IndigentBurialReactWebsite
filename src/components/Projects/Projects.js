@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import leaf from "../../Assets/Projects/agehisto.png";
+import emotion from "../../Assets/Projects/deathperyear.png";
+import editor from "../../Assets/Projects/agegroup.png";
+import chatify from "../../Assets/Projects/malefemale.png";
+import suicide from "../../Assets/Projects/jurisdiction.png";
+import bitsOfCode from "../../Assets/Projects/map.png";
 
 function Projects() {
   return (
@@ -15,20 +15,20 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+         Data <strong className="purple">Analysis </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are some of the findings.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Male vs Female"
+              description="The pie chart represents the distribution of indigent burials between males and females. It visually demonstrates that males account for a significant majority, constituting 77.8% of all indigent burials. This data sheds light on the gender disparity in indigent burials and emphasizes the need to address the underlying factors contributing to this disproportionate representation."
+              ghLink="https://github.com/larakaracasu/Indigent-Burial-Analysis/tree/main/notebooks"
+              
             />
           </Col>
 
@@ -36,10 +36,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Geospatial Map"
+              description="This is a map showcasing the geographical distribution of indigent burials across the United States. It offers a visual representation of the locations where our sources have identified cases of indigent burials. By displaying this information on a map, it provides insights into the widespread nature of indigent burials and highlights areas where such occurrences are more prevalent. This visual representation aids in understanding the geographic scope of the issue and can guide further research and interventions aimed at addressing the challenges associated with indigent burials in specific regions or states."
+              ghLink="https://github.com/larakaracasu/Indigent-Burial-Analysis/tree/main/notebooks"
+              
             />
           </Col>
 
@@ -47,10 +47,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Age"
+              description="The pie chart illustrates the distribution of indigent burials based on age groups. It provides a visual representation of the proportion of indigent burials within different age categories. By analyzing the pie chart, we can gain insights into the age demographics most affected by indigent burials. This information is crucial for understanding the social and economic factors that contribute to the vulnerability of certain age groups. It can assist policymakers, organizations, and communities in identifying target areas for intervention and support, such as providing resources for elderly populations or implementing preventive measures for younger individuals at risk of indigent burials."
+              ghLink="https://github.com/larakaracasu/Indigent-Burial-Analysis/tree/main/notebooks"
+                         
             />
           </Col>
 
@@ -58,10 +58,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Age Frequency"
+              description="The histogram displays the distribution of available data based on age. It provides a visual representation of the frequency or count of individuals within different age intervals. By examining the histogram, we can identify the age groups for which we have a higher concentration of data points. This information is valuable for understanding the completeness and representativeness of the dataset, as well as potential biases or gaps in the available information. Analyzing the histogram can help researchers and analysts determine if further data collection efforts are needed to ensure a more comprehensive understanding of age-related patterns and trends. Additionally, it aids in identifying age groups with a robust data presence, enabling more accurate statistical analyses and insights in those specific age ranges."
+              ghLink="https://github.com/larakaracasu/Indigent-Burial-Analysis/tree/main/notebooks"
+             
             />
           </Col>
 
@@ -69,10 +69,10 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Jurisdiction Scatterplot"
+              description="The scatterplot displays the concentration of indigent burials across different jurisdictions over time. It helps identify patterns and trends in the distribution of indigent burials, highlighting jurisdictions with higher or lower concentrations. This information enables targeted interventions and resource allocation to address the needs of specific areas."
+              ghLink="https://github.com/larakaracasu/Indigent-Burial-Analysis/tree/main/notebooks"
+      
             />
           </Col>
 
@@ -80,11 +80,10 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Indigent Deaths Per Year"
+              description="The bar graph illustrates the number of deaths per year in relation to indigent burials. It provides a visual representation of the correlation between the overall number of deaths and the occurrence of indigent burials over time. By comparing the data, it becomes possible to identify any significant fluctuations or patterns in the relationship between these two factors, which can inform decision-making and resource allocation in addressing the needs of indigent burials."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+       
             />
           </Col>
         </Row>
